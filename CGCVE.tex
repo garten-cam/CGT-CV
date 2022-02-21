@@ -1,0 +1,90 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+%\usepackage[T1]{inputenc}
+%\usepackage[spanish,es-noquoting]{babel}              % replace by the encoding you are using
+
+\usepackage[]{graphicx}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Camilo}
+\familyname{Garc\'ia Tenorio.}
+%\title{}               % optional, remove the line if not wanted
+\address{Chemin du Versant 6}{7000 Mons}   % optional, remove the line if not wanted
+\mobile{+32 495 87 82 58}                    % optional, remove the line if not wanted
+%\phone{8616286}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{camilo\_7@msn.com}% optional, remove the line if not wanted
+\extrainfo{Professional Card CN206-69339} % optional, remove the line if not wanted
+
+%\photo[64pt]{hojadevida2}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{mi vida hermosa}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\section{Professional Profile}
+\cvline{}{Ph. D.  Mechanical and Electromechanical engineerings. With an emphasis on the analysis of control systems based on data-driven algorithms and operator theory. Experienced MATLAB programmer in the field of dynamical systems analysis and control.}  
+\section{Publications}
+\cventry{2021}{Analysis of the ROA of an anaerobic digestion process via data-driven Koopman operator}{Camilo Garcia-Tenorio, Eduardo Mojica-Nava, Mihaela Sbarciog and Alain Vande Wouwer}{Nonlinear Engineering}{10 p. 109--131}{}
+\cventry{2021}{Trigonometric Embeddings in Polynomial Extended Mode Decomposition—Experimental Application to an Inverted Pendulum}{Camilo Garcia-Tenorio, Eduardo Mojica-Nava, Gilles Delansnay and Alain Vande Wouwer}{Mathematics}{10, 1119}{}
+\section{Work Experience}
+\cventry{2020--2023}{Researcher}{Mons University-TECforLime}{Mons--Louvain-La-Neuve}{Belgium}{Researcher in data-driven methods for lime production as part of the BeWaRe fellowship of the Walloon region in Belgum.}
+\cventry{2015--2021}{Ph. D. Candidate}{Universidad Nacional--Mons University}{Bogot\'a--Mons}{Colombia-Belgium}{Ph. D. In Mechanical and Mechatronics engineerings in a cotutelle agreement with University of Mons.}
+\cvlistitem{Analysis and control of nonlinear dynamical systems. Research and development of theories and algorithms based on the Koopman operator.}
+\cvlistitem{Characterization of attraction regions of asymptotically stable equilibrium points. Research and development based on the spectral decomposition of the Koopman operator. }
+\cvlistitem{Development of numeric algorithms to obtain the Koopman operator of dynamical systems. Research on the use of the trajectories or sample data of the dynamical system to approximate the operator representation.}
+\cvlistitem{Development of the EDMD algorithm for system analysis and control.}
+\cventry{2015--2015}{Lecturer}{Universidad Distrital}{Bogot\'a}{Colombia}{Professor of the Control systems course of the electronics engineer program. Course based on the analysis of input and outputs of linear systems focused in the behavior of the outputs depending on the inputs to achieve response objectives. The functions of the position are:}
+\cvlistitem{Prepare classes and laboratories}
+\cvlistitem{Prepare and grade partial exams}
+\cvlistitem{Ensure that the student group get prepared in the aspects of classical control theory}
+\cventry{2013--2014}{Graduate Teaching Assistant}{Los Andes University}{Bogot\'a}{Colombia}{Work as an assistant in different subjects from the undergraduate program designing laboratory assignments, designing and evaluating class workshops and different tutorials in subjects such as:}
+\cvlistitem{Control Systems Analysis}
+\cvlistitem{Dynamic Systems}
+\cvlistitem{Electronic Instrumentation}
+\cvlistitem{Digital Electronics}
+
+\section{Formal Education}
+\cventry{2014(E)}{Master of Science in electronics engineerings}{los Andes University}{Bogot\'a Colombia}{}{}     % arguments 3 to 6 are optional
+\cventry{2010}{Electronic Engineer}{los Andes University}{Bogot\'a Colombia}{}{}     % arguments 3 to 6 are optional
+\cventry{2005}{High School Degree}{Abraham Lincoln School}{Bogot\'a Colombia}{}{}  % arguments 3 to 6 are optional
+\section{Languages}
+%\cvlanguage{Español}{Lengua Materna}{}
+\cvlanguage{English}{100\%}{TOEFL(IBT) Score: 105/120}
+\section{Computer Skills}
+\cvcomputer{Software}{Microsoft Office, MATLAB,}{}{}
+\cvcomputer{}{LabVIEW, Spice}{}{}
+\cvcomputer{Programming languages}{MATLAB, Python, Ladder}{}{}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
