@@ -1,12 +1,5 @@
 # Camilo Garcia -- Curriculum Vitae
 
-Repo to keep my curriculum and not have to search all my hard drives to find a possibly older version that I have to constantly update.
+Ph. D., in  Mechanical and Electromechanical engineerings. With an emphasis on the analysis of control systems based on data-driven algorithms and operator theory. Experienced MATLAB programmer in the field of dynamical systems analysis and control.
 
-# Another test
-
-Try and store the credentials in cache to avoid constant input of the token
-
-Some changes to the development branch
-
-Another change
 
