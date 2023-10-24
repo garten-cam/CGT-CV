@@ -1,0 +1,86 @@
+%!TEX program=xelatex
+\documentclass[11pt,a4paper]{moderncv}
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% character encoding
+%\usepackage[T1]{inputenc}
+%\usepackage[spanish,es-noquoting]{babel}              % replace by the encoding you are using
+
+\usepackage[]{graphicx}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Camilo}
+\familyname{Garcia Tenorio.}
+%\title{}               % optional, remove the line if not wanted
+\address{Rue du Gouvernement 41b}{7000 Mons, Belgique}   % optional, remove the line if not wanted
+\mobile{+32 495 87 82 58}                    % optional, remove the line if not wanted
+\email{camilo\_7@msn.com}% optional, remove the line if not wanted
+%\extrainfo{Professional Card CN206-69339} % optional, remove the line if not wanted
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\section{Professional Profile}
+\cvline{}{Ph.D.\ in  Mechanical and Electromechanical Engineering, with an emphasis on the analysis of control systems based on data-driven algorithms and the Koopman operator. Research focus on general control theory for non-linear systems. Currently working in Industry 4.0 solutions in a collaborative project between academy and industry. Interest in data-driven models from sensor data to produce solutions in a cloud server to subsequently design feedback loop controllers, optimization algorithms and anomaly detection methods to be deployed in edge computers. Experienced MATLAB programmer in the field of dynamical systems analysis and control.}  
+\section{Work Experience}
+\cventry{2020--2023}{Researcher}{Universit\'e de Mons/TECforLime}{Mons/Louvain-La-Neuve}{Belgium}{Researcher in data-driven methods for Industry 4.0 deployment solutions for lime production as part of the BeWaRe fellowship of the Walloon region in Belgium.}
+\cvlistitem{Data-driven modeling of the industrial process via the pqEDMD algorithm.}
+\cvlistitem{Research and development of data-driven modeling tools to capture the dynamics of the process. Specifically, improving the pqEDMD algorithm by adding optimization schemas that can deal with the uncertainty in the measurements and the numerical stability of the solution.}
+\cventry{2015--2021}{Ph.D. Candidate}{Universidad Nacional/Universit\'e de Mons}{Bogot\'a/Mons}{Colombia/Belgique}{Ph.D. In Mechanical and Electromechanical Engineering in a cotutelle agreement with University of Mons.}
+\cvlistitem{Analysis and control of nonlinear dynamical systems. Research and development of theories and algorithms based on the Koopman operator.}
+\cvlistitem{Characterization of attraction regions of asymptotically stable equilibrium points. Research and development based on the spectral decomposition of the Koopman operator. }
+\cvlistitem{Development of numeric algorithms to obtain the Koopman operator of dynamical systems. Research on the use of the trajectories or sample data of the dynamical system to approximate the operator representation.}
+\cvlistitem{Development of the pqEDMD algorithm for system analysis and control.}
+\cventry{2015--2015}{Lecturer}{Universidad Distrital}{Bogot\'a}{Colombia}{Professor of the Control systems course of the electronics engineer program. Course in linear system analysis, transfer functions and Laplace transforms. Covering stability analysis, feedback controller design and frequency analysis. The functions of the position are:}
+\cvlistitem{Prepare classes and laboratories}
+\cvlistitem{Prepare and grade partial exams}
+\cvlistitem{Ensure that the student group get prepared in the aspects of classical control theory}
+\cventry{2013--2014}{Graduate Teaching Assistant}{Los Andes University}{Bogot\'a}{Colombia}{Work as an assistant in different subjects from the undergraduate program designing laboratory assignments, designing and evaluating class workshops and different tutorials in subjects such as:}
+\cvlistitem{Control Systems Analysis}
+\cvlistitem{Dynamic Systems}
+\cvlistitem{Electronic Instrumentation}
+\cvlistitem{Digital Electronics}
+
+\section{Formal Education}
+\cventry{2021}{Ph.D., in Mechanical and Electromechanical Engineering}{Unviersidad Nacional de Colombia}{Bogot\'a Colombia}{In cotutelle with Universit\'e de Mons}{Thesis on data-driven analysis and control of dynamical systems. Focus on the analysis of the multi stability phenomenon via the Koopman operator.}
+\cventry{2021}{Ph.D., in Engineering Sciences}{Universit\'e de Mons}{Mons Belgique}{In cotutelle with Universidad Nacional de Colombia}{}
+\cventry{2014}{M.Sc.\ in Electronics engineering}{Universidad de Los Andes}{Bogot\'a Colombia}{}{}     % arguments 3 to 6 are optional
+\cventry{2010}{Electronic Engineer}{Universidad de Los Andes}{Bogot\'a Colombia}{}{}     % arguments 3 to 6 are optional
+\section{Publications}
+\cventry{2023}{Evaluation of the Regions of Attraction of Higher-Dimensional Hyperbolic Systems Using Extended Dynamic Mode Decomposition}{Camilo Garcia-Tenorio, Duvan Tellez-Castro, Eduardo Mojica-Nava and Alain Vande Wouwer}{Automation}{4 (1) p. 57--77}{}
+\cventry{2022}{Maximum Likelihood pqEDMD Identification}{Camilo Garcia-Tenorio and Alain Vande  Wouwer}{International Conference on System Theory, Control and Computing, Sinaia, Romania}{p. 540--545}{}
+\cventry{2022}{A Matlab Toolbox for Extended Dynamic Mode Decomposition Based on Orthogonal Polynomials and pq Quasi-Norm Order Reduction}{Camilo Garcia-Tenorio and Alain Vande Wouwer}{Mathematics}{10 (20) p. 3859}{}
+\cventry{2022}{Data-Driven Predictive Control of Interconnected Systems Using the Koopman Operator}{Duvan Tellez-Castro, Camilo Garcia-Tenorio, Eduardo Mojica-Nava, Jorge Sofrony and Alain Vande Wouwer}{Actuators}{11 (6) p. 151}{}
+\cventry{2022}{Extended Predictive Control of Interconnected Oscillators}{Camilo Garcia-Tenorio and Alain Vande Wouwer}{International Conference on Control, Decision and Information Technologies}{1 p. 15--20}{}
+\cventry{2022}{PFR Kiln Feature Selection for Modelling and Control}{Camilo Garcia-Tenorio, Alain Vande Wouwer, Thomas Abbate, Laurent Rijmenans}{International Conference on System Theory, Control and Computing}{p. 588--593}{}
+\cventry{2021}{Analysis of the ROA of an anaerobic digestion process via data-driven Koopman operator}{Camilo Garcia-Tenorio, Eduardo Mojica-Nava, Mihaela Sbarciog and Alain Vande Wouwer}{Nonlinear Engineering}{10 p. 109--131}{}
+\cventry{2021}{Trigonometric Embeddings in Polynomial Extended Mode Decomposition—Experimental Application to an Inverted Pendulum}{Camilo Garcia-Tenorio, Eduardo Mojica-Nava, Gilles Delansnay and Alain Vande Wouwer}{Mathematics}{10, 1119}{}
+\cventry{2020}{Linearization in the Large of the Anaerobic Digestion Process Using a Reduced-Order Koopman Operator}{Camilo Garcia-Tenorio, Mihaela Sbarciog, Eduardo Mojica-Nava, Alain Vande Wouwer}{IFAC-PapersOnLine}{53 (2) p. 16840--16845}{}
+\cventry{2019}{Analysis of a class of hyperbolic systems via data-driven koopman operator}{Camilo Garcia-Tenorio, Duvan Tellez-Castro, Eduardo Mojica-Nava, A Vande Wouwer}{International Conference on System Theory, Control and Computing}{p. 566--571}{}
+\cventry{2016}{Bond graph model-based for IDA-PBC}{C Garcia-Tenorio, N Quijano, E Mojica-Nava, J Sofrony}{IEEE Conference on Control Applications}{p. 1098--1103}{}
+\section{Languages}
+\cvlanguage{Spanish}{Mother Language}{}
+\cvlanguage{English}{100\%}{TOEFL (IBT) Score: 105/120}
+\section{Computer Skills}
+\cvcomputer{Software}{MATLAB, \LaTeX, Python, Spice}{}{}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
