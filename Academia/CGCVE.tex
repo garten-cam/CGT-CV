@@ -20,6 +20,7 @@
 \address{Rue du Gouvernement 41b}{7000 Mons, Belgique}   % optional, remove the line if not wanted
 \mobile{+32 495 87 82 58}                    % optional, remove the line if not wanted
 \email{camilo\_7@msn.com}% optional, remove the line if not wanted
+\extrainfo{\httplink[LinkedIn]{www.linkedin.com/in/camilo-garcia-tenorio-08813740/}\\\httplink[GitHub]{github.com/garten-cam}}
 %\extrainfo{Professional Card CN206-69339} % optional, remove the line if not wanted
 %----------------------------------------------------------------------------------
 %            content
@@ -29,17 +30,22 @@
 \maketitle
 
 \section{Professional Profile}
-\cvline{}{Ph.D.\ in  Mechanical and Electromechanical Engineering, with an emphasis on the analysis of control systems based on data-driven algorithms and the Koopman operator. Research focus on general control theory for non-linear systems. Currently working in Industry 4.0 solutions in a collaborative project between academy and industry. Interest in data-driven models from sensor data to produce solutions in a cloud server to subsequently design feedback loop controllers, optimization algorithms and anomaly detection methods to be deployed in edge computers. Experienced MATLAB programmer in the field of dynamical systems analysis and control.}  
+\cvline{}{Ph.D.\ in  Mechanical and Electromechanical Engineering, with an emphasis on the analysis of control systems based on data-driven algorithms and the Koopman operator. Research focus on general control theory for non-linear systems based on decomposition methods that give linear approximations in a space of functions rather than the state space. Currently working in Industry 4.0 solutions in a collaborative project between academy and industry. Interest in data-driven models from sensor data to produce accurate approximations that subsequently, are the main input for the design of feedback loop controllers, optimization algorithms and anomaly detection methods. Experienced MATLAB programmer in the field of dynamical systems analysis and control.}  
 
 \section{Work Experience}
-\cventry{2020--2023}{Researcher}{Universit\'e de Mons/TECforLime}{Mons/Louvain-La-Neuve}{Belgium}{Researcher in data-driven methods for Industry 4.0 deployment solutions for lime production as part of the BeWaRe fellowship of the Walloon Region in Belgium.}
-\cvlistitem{Data-driven modeling of the industrial process via the pqEDMD algorithm.}
-\cvlistitem{Research and development of data-driven modeling tools to capture the dynamics of the process. Specifically, improving the pqEDMD algorithm by adding optimization schemas that can deal with the uncertainty in the measurements and the numerical stability of the solution.}
+\cventry{2020--2023}{Researcher}{Universit\'e de Mons/TECforLime}{Mons/Louvain-La-Neuve}{Belgium}{Researcher in data-driven methods for modeling and control of complex systems. In the scope of the project, the target system is the lime production in kiln furnaces. Project funded by the BeWaRe fellowship of the Walloon Region in Belgium.}
+\cvlistitem{Prepare and redact the project proposal that led to acquiring the BeWaRe Marie Curie grant.}
+\cvlistitem{Modeling of key variables (Temperatures, pressures, quality) based on the time-series data of the kilns. The models provide an approximation of the behavior of the process, an input useful for analysis of the system, control, and anomaly detection.}
+\cvlistitem{Research and development of data-driven modeling tools to capture the dynamics of the system. Specifically, improving the pqEDMD algorithm by adding optimization schemas that can deal with the uncertainty in the measurements and the numerical stability of the solution.}
+\cvlistitem{Development of the algorithm in Matlab and Python for the subsequent integration in cloud-based platforms, specifically, Microsoft Azure.}
 \cventry{2015--2021}{Ph.D. Candidate}{Universidad Nacional/Universit\'e de Mons}{Bogot\'a/Mons}{Colombia/Belgique}{Ph.D. In Mechanical and Electromechanical Engineering in a cotutelle agreement with University of Mons.}
-\cvlistitem{Analysis and control of nonlinear dynamical systems. Research and development of theories and algorithms based on the Koopman operator.}
-\cvlistitem{Characterization of attraction regions of asymptotically stable equilibrium points. Research and development based on the spectral decomposition of the Koopman operator. }
-\cvlistitem{Development of numeric algorithms to obtain the Koopman operator of dynamical systems. Research on the use of the trajectories or sample data of the dynamical system to approximate the operator representation.}
-\cvlistitem{Development of the pqEDMD algorithm for system analysis and control.}
+\cvlistitem{Analysis and control of nonlinear dynamical systems.}
+\cvlistitem{Development of modeling techniques based on time-series data of an arbitrary dynamical system. The main achievement of the development is the ability to capture complex nonlinear dynamics in a mathematical structure that is suitable for analysis and control.}
+\cvlistitem{Analysis of complex nonlinear systems using the data-driven models. Specifically, some systems have multiple equilibrium/fixed points, normally, it is desired to keep the system at one of these points, where the behavior is optimal. Therefore, the analysis tool is able to identify the fixed points and determine the region of attraction that guarantees that the system will converge to the desired behavior.}
+\cvlistitem{Data-Driven control of complex systems. The models that come from the time-series data of an actual system, or the integration of a differential equation using my development are suitable to use as the basis for model predictive control (MPC) algorithms. Therefore, I also developed a variant of MPC that takes the structure of my data-driven approximations to make decision for driving the system to a desired fixed point.}
+\cvlistitem{All the aforementioned achievements depend on the effective approximation of the behavior of a process using the time-series data. These approximations come from black-box models that rely on the selection of appropriate global approximation functions. The contribution of my thesis to this type of models is the systematic an effective selection of functions for the global approximation. As a consequence, my approach increases the numerical stability, and reduces the computational effort of the algorithm.}
+\cvlistitem{Improvement of the extended dynamic mode decomposition (EDMD) algorithm by the systematic selection of black-box approximation functions. My development, called the pqEDMD is available on-line in my GitHub repository.}
+\cvlistitem{Development of process analysis techniques based on the approximations. }
 
 \cventry{2015--2015}{Lecturer}{Universidad Distrital}{Bogot\'a}{Colombia}{Professor of the Control systems course of the electronics engineer program. Course in linear system analysis, transfer functions and Laplace transforms. Covering stability analysis, feedback controller design and frequency analysis. The functions of the position are:}
 \cvlistitem{Prepare classes and laboratories}
