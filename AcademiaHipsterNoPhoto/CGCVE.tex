@@ -1,7 +1,6 @@
-\documentclass[10pt,a4paper,grey]{hipstercv}
+\documentclass[11pt,a4paper,grey]{hipstercv}
 % \usepackage{raleway}
-\usepackage[margin=.5cm, a4paper]{geometry}
-\usepackage[normalem]{ulem}
+\usepackage[margin=1cm, a4paper]{geometry}
 
 %------------------------------------------------------------------ Variablen
 
@@ -27,19 +26,19 @@
 
 
 
-\header{\bg{headerfontbox}{headerfontboxfont}{Ph.D., M.Sc.} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Camilo Garcia-Tenorio}}{\bg{headerfontbox}{headerfontboxfont}{\large Dr. of Engineering Sciences / Mechanical and Mechatronic Eng.}}{fotoSmall2024.jpg}{headerblue}{3.5cm}{2cm}
+\header{\bg{headerfontbox}{headerfontboxfont}{Ph.D., M.Sc.} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Camilo Garcia-Tenorio}}{\bg{headerfontbox}{headerfontboxfont}{\large Dr. of Engineering Sciences / Mechanical and Mechatronic Eng.}}{pix}{headerblue}{2cm}{3cm}
 
 
 
 %------------------------------------------------
 
 \subsection*{}
-\vspace{5em}
+\vspace{4em}
 
-\setlength{\columnsep}{0.5cm}
-\columnratio{0.3,0.7}
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.3}[0.65]
 \begin{paracol}{2}
-	\hbadness10000
+	\hbadness5000
 	%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
 	\paracolbackgroundoptions
@@ -52,13 +51,12 @@
 		\bgupper{cvgreen}{white}{Facts} \\
 		\bg{cvgreen}{white}{Areas of specialization} \\
 
-		% \bigskip
+		\bigskip
 
-		$\bullet$Control Systems $\bullet$Data-Driven Control\\
-		$\bullet$Machine-Learning $\bullet$Identification\\
-		$\bullet$Subspace Methods $\bullet$Digital-Twins\\
-		$\bullet$Industry 4.0 $\bullet$Matlab\\
-		$\bullet$Databricks $\bullet$Azure
+		Control Systems $\bullet$ Data-Driven Control\\
+		Machine-Learning $\bullet$ Identification\\
+		Subspace Methods $\bullet$ Digital-Twins\\
+		Industry 4.0 $\bullet$ Matlab
 
 		\bigskip
 
@@ -69,9 +67,9 @@
 
 		\begin{minipage}[t]{\leftcolwidth}
 			\begin{tabular}{l | ll}
-				\textbf{Spanish} & C1 & \barrule{0.45}{0.4em}{cvpurple} \\
-				\textbf{English} & C1 & \barrule{0.45}{0.4em}{cvpurple} \\
-				\textbf{French}  & B1 & \barrule{0.1}{0.4em}{cvpurple}
+				\textbf{Spanish} & C2 & {\phantom{x}\footnotesize mother tongue}                   \\
+				\textbf{English} & C2 & \pictofraction{\faCircle}{cvpurple}{4}{black!30}{1}{\tiny} \\
+				\textbf{French}  & A2 & \pictofraction{\faCircle}{cvpurple}{1}{black!30}{4}{\tiny}
 			\end{tabular}
 		\end{minipage}
 
@@ -79,7 +77,7 @@
 
 		\bg{cvgreen}{white}{Interests}\\
 
-		\bubblediagram{{\textbf{Data-Driven} \\\textbf{Dynamical}\\\textbf{Systems}}, Model\\Predictive\\Control, AI \& ML,  EDMD\\data-driven, N4SID\\MOESP, Analysis\\Systems, Neural\\ODE, Nonlinear\\Modelling, PINNs}
+		\bubblediagram{{\textbf{Dynamical} \\\textbf{Systems}\\\textbf{Control}}, Model\\Predictive\\Control, AI \& ML,  EDMD\\data-driven, N4SID\\MOESP, Analysis\\Systems, Neural\\ODE, Nonlinear\\Modelling}
 		\medskip
 
 		\hspace{0.5cm} \color{labelcolour}{OS:} \hspace{0.5em}\icon{\faLinux}{labelcolour}{\Large} \hspace{0.5em} \icon{\faApple}{labelcolour}{\Large} \hspace{0.5em} \icon{\faWindows}{labelcolour}{\Large}
@@ -88,13 +86,13 @@
 
 		\bg{cvgreen}{white}{IT \& programming} \\
 
-		\begin{minipage}[t]{\leftcolwidth}
+		\begin{minipage}[t]{0.3\textwidth}
 			\begin{tabular}{r @{\hspace{0.5em}}l}
-				\bg{skilllabelcolour}{iconcolour}{MATLAB} & \barrule{0.55}{0.5em}{cvpurple} \\
-				\bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.4}{0.5em}{cvpurple}  \\
+				\bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen}  \\
+				\bg{skilllabelcolour}{iconcolour}{MATLAB} & \barrule{0.55}{0.5em}{cvgreen}  \\
 				\bg{skilllabelcolour}{iconcolour}{linux}  & \barrule{0.45}{0.5em}{cvpurple} \\
+				\bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.4}{0.5em}{cvpurple}  \\
 				\bg{skilllabelcolour}{iconcolour}{Julia}  & \barrule{0.15}{0.5em}{cvpurple} \\
-				\bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvpurple}
 			\end{tabular}
 
 
@@ -124,19 +122,22 @@
 	\small
 	\section*{Short Resumé}
 
-	\begin{tabular}{r| p{0.57\textwidth}}
-		\cvevent{2020--202x}{Post-Doctoral Researcher}{Researcher}{Universit\'e de Mons}{Data-driven modeling and control of industrial production systems, (lime production in PFR-kiln, and biochemical reactors for the pharmaceutical industry). Development of the pqEDMD algorithm: a system agnostic platform for data-driven model and control. Cloud (Azure) deployment of modeling algorithms in Python. } \\
-		\cvevent{2015--2021}{Ph.D. Candidate}{Researcher}{Cotutelle - Umons-Belgium/Unal-Colombia}{Extended dynamic mode decomposition $\bullet$ Koopman operator $\bullet$ Regions of attraction $\bullet$ Nonlinear models $\bullet$ Model predictive control $\bullet$.}                                                                                                                                          \\
+	\begin{tabular}{r| p{0.5\textwidth}}
+		\cvevent{2020--202x}{Post-Doctoral Researcher}{Researcher}{Universit\'e de Mons}{Data-driven (Machine Learning) model and control of Industrial lime production and biochemical systems, mammalian cell cultures. Python and Matlab algorithm based on EDMD.}                                                        \\
+		\cvevent{2015--2021}{Ph.D. Candidate}{Researcher}{Cotutelle - Umons-Belgium/Unal-Colombia}{Extended dynamic mode decomposition $\bullet$ Koopman operator $\bullet$ Regions of attraction $\bullet$ Nonlinear models $\bullet$ Model predictive control $\bullet$.} \\
 		\cvevent{2010--2015}{Lecturer, Automation Salesman, Teaching Assistant, Project Manager}{Various Positions}{Colombia}{Control systems lectures $\bullet$ Quote and sell automation solutions $\bullet$ Laboratory and complimentary lectures $\bullet$ Automate banking solutions $\bullet$ Manage post-sales activities.}
 	\end{tabular}
+	% \begin{center}
+	%   \smartdiagram
+	% \end{center}
 
 	\vspace{2em}
 
-	\begin{minipage}[t]{0.5\textwidth}
+	\begin{minipage}[t]{0.4\textwidth}
 		\section*{Degrees}
 		\begin{tabular}{r p{0.8\textwidth} c}
 			\cvdegree{2021}{Philosophical Doctor in Engineering Science / Mechanical and Mechatronic Eng.}{Ph.D.}{Umons/Unal $\cdot$ Bel/Col} \\
-			\cvdegree{2014}{Master of science in Electronic Engineering}{M.Sc.}{Los Andes $\cdot$ Colombia}                                   \\
+			\cvdegree{2014}{Master of science in Electronic Engineering}{M.Sc.}{Los Andes $\cdot$ Colombia} \\
 			\cvdegree{2010}{Electronic Engineer}{B.S.}{Los Andes $\cdot$ Colombi}
 		\end{tabular}
 	\end{minipage}\hfill
@@ -169,7 +170,7 @@
 		\cvkeyword{\href{mailto:alain.vandewouwer@umons.ac.be}{Prof. Alain Vande Wouwer \icon{\faEnvelope}{cvred}{}}}{cvgreen}{iconcolour}
 		\cvkeyword{\href{mailto:eamojican@unal.edu.co}{Prof. Eduardo Mojica \icon{\faEnvelope}{cvred}{}}}{cvgreen}{iconcolour}
 	\end{minipage}\hfill
-	\begin{minipage}[t]{0.37\textwidth}
+	\begin{minipage}[t]{0.3\textwidth}
 		\section*{Publications}
 		\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.75\textwidth}}
 			2023 & \emph{Evaluation of the Regions of Attraction of Higher-Dimensional Hyperbolic Systems Using Extended Dynamic Mode Decomposition}$\cdot$Automation(4(1)p.57--77).  \\
